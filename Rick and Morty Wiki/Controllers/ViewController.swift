@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.nameLabel.text = characters[indexPath.row].name
         cell.genderLabel.text = characters[indexPath.row].gender
         cell.speciesLabel.text = characters[indexPath.row].species
-        cell.backgroundColor = .systemMint
+        //cell.backgroundColor = .
         let urlString = characters[indexPath.row].image
         let url = URL(string: urlString)
         cell.characterImage.downloaded(from: url!)

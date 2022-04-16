@@ -38,12 +38,15 @@ class CharacterViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var episodesLabel: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     var character: CharacterInfo?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        backgroundImage.image = UIImage(named: "Background2.png")
+                
         nameLabel.text = character?.name
         speciesLabel.text = character?.species
         genderLabel.text = character?.gender
